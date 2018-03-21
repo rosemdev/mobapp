@@ -10,29 +10,30 @@
   }
 
   header {
-    width: 75%;
-    margin: auto;
-    & .logo-block {
+    & .menu {
+      width: 75%;
+      & .logo-block {
 
-    }
+      }
 
-    & .menu-icon {
-      display: none;
-    }
+      & .menu-icon {
+        display: none;
+      }
 
-    & nav {
-      background-image: none;
-      & ul {
-        flex-direction: row;
-        justify-content: flex-end;
-        position: static;
+      & nav {
         background-image: none;
-        padding: 0;
+        & ul {
+          flex-direction: row;
+          justify-content: flex-end;
+          position: static;
+          background-image: none;
+          padding: 0;
 
-        & li {
-          &:first-child, &:last-child {
-            margin: 0;
+          & li {
+            &:first-child, &:last-child {
+              margin: 0;
 
+            }
           }
         }
       }
@@ -52,14 +53,41 @@
   }
 
   .discover {
-    & .description {
+
+    & .discover-app {
+      display: flex;
+      flex-direction: column;
+    }
+
+    & .launch-app {
+      flex-direction: row-reverse;
+      align-items: center;
+    }
+
+    & .description1 {
       padding: 12px 0;
       margin-left: 50%;
+      position: relative;
+      z-index: 2;
 
+    }
+
+    & .description2 {
+      padding: 12px 0;
+      width: 45%;
+    }
+
+    & .iphone1 {
+      margin-top: -140px;
+      & img {
+        width: 80%;
       }
 
-    & .iphone {
-      margin-top: -165px;
+    }
+
+    & .iphone2 {
+      width: 55%;
+      text-align: left;
       & img {
         width: 80%;
       }
@@ -67,4 +95,30 @@
     }
 
   }
+
+  .step {
+    flex-direction: row;
+    & > div:first-child {
+      flex: 60%;
+      text-align: left;
+      & ul {
+        & li {
+          & .circle-icon {
+            width: 90px;
+            height: 90px;
+            font-size: 48px;
+            line-height: 72px;
+          }
+
+        }
+      }
+    }
+
+
+    & > div:last-child {
+      text-align: right;
+    }
+  }
 }
+
+
