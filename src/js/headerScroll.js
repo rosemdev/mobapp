@@ -10,7 +10,6 @@ export default function stickyHeader(selector, options) {
 
         if (window.pageYOffset > headerOffset) {
             header.classList.add(options.class);
-            console.log(header.offsetHeight);
             sibling.style.paddingTop = header.offsetHeight + "px";
 
 
