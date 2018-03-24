@@ -6,7 +6,7 @@
 
   header {
     & .menu {
-    width: 65%;
+      width: 65%;
     }
   }
 
@@ -24,20 +24,45 @@
       height: 600px;
     }
   }
-}
 
+  //***************************
+  // TABS
+  //***************************
+  .tabs {
+    & .accordion {
+      & .tab-content {
+        & .image {
+          margin: 35px;
+        }
 
-//***************************
-// TABS
-//***************************
+      }
+    }
 
-.tabs {
-  & .accordion {
-    & .tab-content {
-      & .image {
-        margin: 35px;
+  }
+
+  //***************************
+  // PRICING
+  //***************************
+
+  & .pricing {
+    & .price-container {
+      justify-content: space-between;
+      & .price-card {
+        width: 100%;
+
       }
 
+    }
+
+    .pricing {
+      & .faq {
+        & .query-answer {
+          & .question {
+            padding: 20px 10px;
+          }
+        }
+
+      }
     }
   }
 }

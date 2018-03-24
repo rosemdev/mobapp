@@ -32,7 +32,6 @@
   //***************************
   // TABS
   //***************************
-
   .tabs {
     & .accordion {
       & .tab-content {
@@ -40,6 +39,49 @@
       }
     }
   }
-}
 
+  .pricing {
+    & .faq {
+      & .query-answer {
+        & .question {
+          flex-basis: 50%;
+          & p {
+            line-height: 1.2;
+            font-size: 17px;
+          }
+        }
+      }
+
+    }
+  }
+
+  .download {
+    & .download-links {
+      & a {
+        margin: 0 15px;
+
+        & img {
+          width: 35px;
+        }
+      }
+    }
+  }
+
+  //***************************
+  // FOOTER
+  //***************************
+
+  footer {
+    & .footer-links {
+      & .contact {
+        & p {
+          font-size: 17px;
+          &.pink {
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+}
 

@@ -119,6 +119,40 @@
       text-align: right;
     }
   }
+
+
+  .pricing {
+    & .price-container {
+      flex-direction: row;
+      justify-content: center;
+      & .price-card {
+        margin: 5px;
+        width: 100%;
+        & a {
+          padding: 10px 15px;
+        }
+
+      }
+
+    }
+  }
+
+  //***************************
+  // FOOTER
+  //***************************
+
+  footer {
+    & .footer-links {
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-around;
+      & .contact {
+        & p {
+          text-align: left;
+        }
+      }
+    }
+  }
 }
 
 
