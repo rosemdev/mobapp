@@ -21,7 +21,6 @@ export default function Tabs(selector, options) {
         }
 
         let clickedTAb = event.target.closest('[data-tab= "tab"]');
-        console.log(clickedTAb);
 
         for (let i = 0; i < self.tabs.length; i++) {
 
