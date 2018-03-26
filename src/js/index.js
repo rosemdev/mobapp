@@ -1,5 +1,6 @@
 import stickeHeader from "./headerScroll"
 import Tabs from "./tabs"
+import Scroll from "./scrollIntoView"
 
 window.onload = function () {
 
@@ -15,6 +16,8 @@ window.onload = function () {
         activeTabClass: "active-tab",
         activeContentClass: "active"
 
-    })
+    });
+
+    let scrollmenu = new Scroll ("nav > ul", {});
 
 };

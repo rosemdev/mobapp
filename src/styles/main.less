@@ -65,7 +65,7 @@
   text-transform: uppercase;
 
   &:hover {
-    background-color: @violet;
+    background-image: linear-gradient(to right bottom, #4b0e8f, #7f0193, #ab0095, #d30c93, #f6298f);
   }
 }
 
@@ -395,6 +395,7 @@ nav {
           border-top-style: solid;
           border-color: #ce75b4 #faf6fb #FFF;
           margin: 7px 0;
+          transition: all 0.3s ease-out;
 
         }
       }
@@ -694,6 +695,11 @@ nav {
       margin: 2px;
       white-space: nowrap;
 
+      &:hover {
+        background-image: linear-gradient(to right bottom, #4b0e8f, #7f0193, #ab0095, #d30c93, #f6298f);
+        color: white;
+      }
+
 
       & img {
         width: 25px;
@@ -758,6 +764,10 @@ footer {
         padding: 15px;
         box-shadow: 0 0 21px 0 rgba(0, 0, 0, 0.05);
         border-radius: 3px;
+
+        &:hover {
+          background-image: linear-gradient(to right bottom, #4b0e8f, #7f0193, #ab0095, #d30c93, #f6298f);
+        }
 
         & img {
           width: 25px;

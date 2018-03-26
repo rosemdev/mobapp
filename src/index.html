@@ -13,11 +13,10 @@
     <link rel="stylesheet" href="./styles/tablet.less">
     <link rel="stylesheet" href="./styles/laptop.less">
     <link rel="stylesheet" href="./styles/desktop.less">
-    <!--<script async src="./js/headerScroll.js"></script>-->
     <script defer src="./js/index.js"></script>
 </head>
 <body>
-<section class="fluid-container bg-gradient">
+<section class="fluid-container bg-gradient" data-section="home">
     <header>
         <div class="menu main-container">
             <div class="logo-block">
@@ -30,7 +29,7 @@
                     <span></span>
                 </div>
                 <ul>
-                    <li><a href="#home" class="active-item">Home</a></li>
+                    <li><a href="#home">Home</a></li>
                     <li><a href="#features">features</a></li>
                     <li><a href="#gallery">gallery</a></li>
                     <li><a href="#pricing">pricing</a></li>
@@ -52,7 +51,7 @@
 <section class="sponsors fluid-container">
     <img src="https://colorlib.com/etc/MobApp/images/client-logos.png">
 </section>
-<section class="fluid-container bg-grey">
+<section class="fluid-container bg-grey" data-section="features">
     <section class="features main-container">
         <small>highlights</small>
         <h3>Features you love</h3>
@@ -262,7 +261,7 @@
     </div>
 
 </section>
-<section class="fluid-container bg-grey">
+<section class="fluid-container bg-grey" data-section="gallery">
     <div class="screenshots main-container">
         <small>Gallery</small>
         <h3>App Screenshots</h3>
@@ -282,7 +281,7 @@
         </div>
     </div>
 </section>
-<section class="fluid-container pricing">
+<section class="fluid-container pricing" data-section="pricing">
     <small>Pricing</small>
     <h3>Upgrade to Pro</h3>
     <div class="price-container main-container">
@@ -352,7 +351,7 @@
         </div>
     </div>
 </section>
-<section class="fluid-container bg-gradient">
+<section class="fluid-container bg-gradient" data-section="contact">
     <div class="download main-container">
         <div class="box-icon">
             <img src="./images/smartphone.png">
