@@ -52,6 +52,7 @@
   top: 0;
   left: 0;
   right: 0;
+
 }
 
 .read-btn {
@@ -149,6 +150,27 @@ header {
         background-color: #ce9cca;
         border-radius: 9px;
         margin: 5px;
+        transform: rotate(0deg);
+        transition: all .5s ease;
+
+      }
+
+      &.change {
+        & span {
+          transition: all .5s ease;
+
+          &:first-child {
+            transform: rotate(-45deg) translate(-5px, 5px);
+          }
+
+          &:nth-child(2) {
+            opacity: 0;
+          }
+
+          &:last-child {
+            transform: rotate(45deg) translate(-5px, -5px);
+          }
+        }
       }
     }
 
@@ -169,13 +191,17 @@ nav {
     position: absolute;
     top: 0;
     left: 0;
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     right: 0;
     padding-top: 50px;
     flex-direction: column;
     width: 100%;
     background-image: linear-gradient(to right bottom, #4b0e8f, #7f0193, #ab0095, #d30c93, #f6298f);
+
+    &.menu-active {
+      display: flex;
+    }
 
     & li {
       padding: 12px;

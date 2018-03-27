@@ -2,6 +2,7 @@ import stickeHeader from "./headerScroll"
 import Tabs from "./tabs"
 import Scroll from "./scrollIntoView"
 
+
 window.onload = function () {
 
     let header = new stickeHeader("header", {
@@ -19,5 +20,6 @@ window.onload = function () {
     });
 
     let scrollmenu = new Scroll ("nav > ul", {});
+
 
 };
