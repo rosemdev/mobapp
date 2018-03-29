@@ -566,33 +566,65 @@ nav {
 .screenshots {
   text-align: center;
 
-  & .carousell {
+  & .carousel {
+    overflow: hidden;
+
     & .image-set {
-      overflow: hidden;
       display: flex;
-      justify-content: space-between;
+      //justify-content: space-around;
       align-items: center;
       margin: 3rem auto;
       text-align: center;
+      position: relative;
 
-      & img {
-        width: 40%;
-        margin: 1rem;
+      & li {
+        margin: 25px;
+        flex-shrink: 0;
         opacity: 0.7;
-
-        &.activeSlide {
-          //width: 70%;
-          transition: all .3s ease;
-          //transform: scale(0.8);
-          //right: 10%;
-          //position: absolute;
-          opacity: 1;
-          z-index: 2;
-
+        display: none;
+        & img {
+          width: 100%;
         }
-      }
+            &.activeSlide {
+              //display: block;
+              //width: 70%;
+              transition: all .3s ease;
+              //transform: scale(0.8);
+              //right: 10%;
+              //position: absolute;
+              opacity: 1;
+              z-index: 2;
 
+            }
+
+      }
     }
+
+    & .arrows {
+      position: absolute;
+      top:71%;
+      width: 70%;
+
+      span {
+        position: absolute;
+        z-index: 3;
+        font-size: 60px;
+        color: @violet;
+        width: 50%;
+
+        &.next {
+          text-align: right;
+          right: 0;
+        }
+
+        &.prev {
+          text-align: left;
+          left: 0;
+        }
+
+      }
+    }
+
 
     & .pagination {
       & span {
@@ -643,7 +675,7 @@ nav {
         width: 100%;
       }
 
-      &:nth-child(2){
+      &:nth-child(2) {
         border-top-width: 3px;
         border-color: #ce75b4 #faf6fb #FFF;
         box-shadow: 0px 12px 59px 0px rgba(36, 7, 31, 0.11);
@@ -666,7 +698,6 @@ nav {
         h4 {
           font-weight: 300;
         }
-
 
         & p {
           line-height: 1.2;
@@ -725,7 +756,6 @@ nav {
         background-image: linear-gradient(to right bottom, #4b0e8f, #7f0193, #ab0095, #d30c93, #f6298f);
         color: white;
       }
-
 
       & img {
         width: 25px;
@@ -804,23 +834,23 @@ footer {
 
   }
 
-    & .links {
-      text-align: center;
-      padding: 30px 0;
-      & p {
-        font-size: 14px;
+  & .links {
+    text-align: center;
+    padding: 30px 0;
+    & p {
+      font-size: 14px;
 
-        &:last-child {
-          margin-top: -17px;
-        }
-        & a {
-          text-transform: uppercase;
-          color: #e38cb7;
-
-        }
+      &:last-child {
+        margin-top: -17px;
       }
+      & a {
+        text-transform: uppercase;
+        color: #e38cb7;
 
+      }
     }
+
   }
+}
 
 

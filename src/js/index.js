@@ -1,6 +1,7 @@
 import stickeHeader from "./headerScroll"
 import Tabs from "./tabs"
 import Scroll from "./scrollIntoView"
+import Carousel from "./carousel"
 
 
 window.onload = function () {
@@ -20,6 +21,25 @@ window.onload = function () {
     });
 
     let scrollmenu = new Scroll ("nav > ul", {});
+
+
+    let carousel = new Carousel ('.carousel', {
+        carousel: ".image-set",
+        paginationItems: ".pagination span",
+        prev: ".prev",
+        next: ".next",
+        activeClass: "activeSlide",
+        activePaginationItemClass: "activeDot"
+
+    });
+    
+
+    carousel.flipping(2);
+
+
+
+
+
 
 
 };
