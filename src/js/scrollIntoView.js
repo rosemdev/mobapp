@@ -13,10 +13,11 @@ export default function Scroll(selector) {
 
         let bottomLimitCord = Math.round(document.body.getBoundingClientRect().bottom);
         let viewportHeight = document.documentElement.clientHeight;
+        let headerHeight = document.querySelector('header').offsetHeight;
 
         for (let i = 0; i < length; i++) {
 
-            if (Math.trunc(self.sections[i].getBoundingClientRect().top) <= 0 || bottomLimitCord === viewportHeight) {
+            if (Math.trunc(self.sections[i].getBoundingClientRect().top) <= headerHeight || bottomLimitCord === viewportHeight) {
 
                 self.menuItems[i].classList.add("active-item");
 
