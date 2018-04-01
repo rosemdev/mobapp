@@ -29,12 +29,21 @@ window.onload = function () {
         prev: ".prev",
         next: ".next",
         activeClass: "activeSlide",
-        activePaginationItemClass: "activeDot"
+        activePaginationItemClass: "activeDot",
+        activeSlide: 2
 
     });
-    
 
-    carousel.flipping(2);
+
+    let testimonials = new Carousel ('.testimonials', {
+        carousel: ".testimonials-container",
+        prev: ".prev",
+        next: ".next",
+
+
+    });
+
+
 
 
 

@@ -523,40 +523,61 @@ nav {
 .testimonials {
   padding: 50px 0;
   text-align: center;
-  & .quotes {
-    padding: 28px;
+  .testimonials-container {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    & .quotes {
+      padding: 28px;
+      flex-shrink: 0;
+      width: 100%;
 
-    & .avatar {
-      width: 100px;
-      height: 100px;
-      text-align: center;
-      margin: 10px auto;
-      overflow: hidden;
-      border-radius: 50%;
-      transition: all .3s ease;
-      transform: scale(1);
+      & .avatar {
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        margin: 10px auto;
+        overflow: hidden;
+        border-radius: 50%;
+        transition: all .3s ease;
+        transform: scale(1);
 
-      &:hover {
-        border: 1px solid @light-violet;
-        transform: scale(1.5);
-      }
-
-      & img {
-        width: 100%;
-      }
-
-    }
-    & .quotation {
-      & p {
-        padding: 25px 15px;
-
-        &.pink {
-          padding: 0;
+        &:hover {
+          border: 1px solid @light-violet;
+          transform: scale(1.5);
         }
-      }
 
+        & img {
+          width: 100%;
+        }
+
+      }
+      & .quotation {
+        & p {
+          padding: 25px 15px;
+
+          &.pink {
+            padding: 0;
+          }
+        }
+
+      }
     }
   }
+
+  & .arrows {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: 220px;
+    & span {
+      cursor: pointer;
+      & img {
+        width: 25px;
+      }
+    }
+  }
+
 }
 
 //***************************
@@ -567,64 +588,42 @@ nav {
   text-align: center;
 
   & .carousel {
-    overflow: hidden;
-
     & .image-set {
       display: flex;
-      //justify-content: space-around;
       align-items: center;
       margin: 3rem auto;
-      text-align: center;
-      position: relative;
+      width: 95%;
+      overflow: hidden;
 
       & li {
-        margin: 25px;
         flex-shrink: 0;
         opacity: 0.7;
-        display: none;
         & img {
-          width: 100%;
+          width: 90%;
         }
-            &.activeSlide {
-              //display: block;
-              //width: 70%;
-              transition: all .3s ease;
-              //transform: scale(0.8);
-              //right: 10%;
-              //position: absolute;
-              opacity: 1;
-              z-index: 2;
+        &.activeSlide {
+          transition: all .3s ease;
+          opacity: 1;
+          z-index: 2;
 
-            }
+        }
 
       }
     }
 
     & .arrows {
-      position: absolute;
-      top:71%;
-      width: 70%;
-
-      span {
-        position: absolute;
-        z-index: 3;
-        font-size: 60px;
-        color: @violet;
-        width: 50%;
-
-        &.next {
-          text-align: right;
-          right: 0;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      bottom: 355px;
+      z-index: 2;
+      & span {
+        cursor: pointer;
+        & img {
+          width: 25px;
         }
-
-        &.prev {
-          text-align: left;
-          left: 0;
-        }
-
       }
     }
-
 
     & .pagination {
       & span {
@@ -648,6 +647,7 @@ nav {
 
 .pricing {
   text-align: center;
+  padding: 50px 0;
 
   & .price-container {
     display: flex;
@@ -841,7 +841,7 @@ footer {
       font-size: 14px;
 
       &:last-child {
-        margin-top: -17px;
+        margin-top: -13px;
       }
       & a {
         text-transform: uppercase;
