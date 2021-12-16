@@ -15,7 +15,7 @@ git config user.name "Romanna Semenyshyn"
 git config user.email "romasemenyshyn@gmail.com"
 git add -A
 git commit -m 'deploy'
-git push -f git@github.com:RomSem/mobapp.git master:gh-pages
+git push -f git@github.com:rosemdev/mobapp.git master:gh-pages
 
 # remove git folder
 rm -rf .git
